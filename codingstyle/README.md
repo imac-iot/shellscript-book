@@ -36,7 +36,7 @@ fi
 所有檔案都應該以敘述此檔案的註解開頭，包含此腳本功能，也可註明作者和版權。
 
 ```sh
-#!/bin/bash
+#!/bin/sh
 #
 #Perform GPIO Initial
 ```
