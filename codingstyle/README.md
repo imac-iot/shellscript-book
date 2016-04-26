@@ -1,8 +1,8 @@
 # codingstyle
 
 ##如何使用Shell？
-Bash是目前唯一的Shell Script語言被官方承認的執行程式。
-Shell執行檔開頭必須加上`#!/bin/bash`，可以在終端機內輸入`bash <shell_name>`來執行。
+Bash是其中一個很好的Shell Script語言直譯器。
+Shell執行檔開頭必須加上`#!/bin/sh`，可以在終端機內輸入`bash <shell_name>`來執行。
 
 ##什麼時候使用Shell？
 Shell腳本僅適合作為小工具或是簡單的程式包裝腳本。
@@ -81,6 +81,7 @@ err(){
 cat << END
 This is a very very very very
 long string.
+END
 
 # Newline
 str="This is a very very very very
