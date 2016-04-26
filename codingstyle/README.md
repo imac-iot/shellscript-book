@@ -23,12 +23,12 @@ Shell執行檔可以沒有副檔名(建議)或是以`.sh`作為副檔名。函�
 
 ```sh
 err() {
-  echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $@" >&2
+    echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $@" >&2
 }
 
 if ! do_something; then
-  err "Unable to do_something"
-  exit "${E_DID_NOTHING}"
+    err "Unable to do_something"
+    exit "${E_DID_NOTHING}"
 fi
 ```
 
@@ -101,7 +101,7 @@ command1 \
 
 ```sh
 for pins in ${GPIO_PINS}; do
-    if [$pins -ne true]; then
+    if[ $pins -ne true ]; then
         pins=true
     fi
 done
